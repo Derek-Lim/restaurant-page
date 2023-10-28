@@ -1,5 +1,6 @@
 import './style.css';
 import homePage from './home.js';
+import contactPage from './contact.js';
 
 document.body.append(header());
 document.body.append(homePage());
@@ -66,3 +67,25 @@ homeButton.addEventListener('click', () => {
     //create footer
     document.body.append(footer());
 });
+
+const contactButton = document.querySelector('.contact');
+
+contactButton.addEventListener('click', () => {
+    //remove everything inside div#content
+    const one = document.querySelector('.one');
+    one.remove();
+    const two = document.querySelector('.two');
+    two.remove();
+    const three = document.querySelector('.three');
+    three.remove();
+    const four = document.querySelector('.four');
+    four.remove();
+    //insert "home" content into div#content
+    document.body.append(contactPage());
+
+    //remove footer
+    const previousFooter = document.querySelector('footer');
+    previousFooter.remove();
+    //create footer
+    document.body.append(footer());
+})
