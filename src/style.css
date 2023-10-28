@@ -1,0 +1,126 @@
+body {
+    background: url(./background.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    background-color: #ffde73;
+    margin: -10px -10px 0px -10px;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+header > nav > button {
+    background-color: #ffde73;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+    height: 50px;
+    margin: -10px 0px -20px 0px;
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    color: black;
+}
+
+div#content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffde73;
+    margin: 50px 100px;
+    align-items: center;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+div#content > div {
+    background-color: #FFC60B;
+}
+
+div.one {
+    font-family: 'Potta One', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px 125px 10px 125px;
+    margin: 20px 0px 80px 0px;
+    border: 10px solid #c16a08;
+}
+
+div.two {
+    width: 400px;
+    padding: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+    border: 20px solid #c16a08;
+}
+
+div.two.description > div {
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    left: 40px;
+}
+
+div.three {
+    width: 400px;
+    padding: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+    border: 20px solid #c16a08;
+}
+
+div.three.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.three.hours > div.heading {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    position: relative;
+    right: 125px;
+}
+
+div.four {
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+    border: 20px solid #c16a08;
+}
+
+div.four.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.four.location > div.heading {
+    font-size: 25px;
+    font-weight: 900;
+    position: relative;
+    right: 110px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: purple;
+}
