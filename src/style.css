@@ -140,3 +140,29 @@ div.four.waiter > div.content {
     position: relative;
     left: 50px;
 }
+
+div.two.honey-tea > div.heading,
+div.three.honeycomb > div.heading,
+div.four.beary-bowl > div.heading {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+div.two.honey-tea > p,
+div.three.honeycomb > p,
+div.four.beary-bowl > p {
+    padding: 0px 40px 0px 60px;
+}
+
+div.two.honey-tea > div.price,
+div.three.honeycomb > div.price,
+div.four.beary-bowl > div.price {
+    position: relative;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+

@@ -16,7 +16,7 @@ export default function homePage() {
     //Add text for description
     const descriptionText = document.createElement('p');
     descriptionText.classList.add('text');
-    descriptionText.textContent = "Beary's has the best porridge! The atmosphere and customer service make you feel like you are sitting in the middle of the woods, eating like a bear! This is exactly the kind of place that I like to return to again and again."
+    descriptionText.textContent = "Beary's has the best honeycomb! The atmosphere and customer service make you feel like you are sitting in the middle of the woods, eating like a bear! This is exactly the kind of place that I like to return to again and again."
     description.append(descriptionText);
     //Add author for text
     const descriptionAuthor = document.createElement('div');

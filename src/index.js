@@ -1,5 +1,6 @@
 import './style.css';
 import homePage from './home.js';
+import menuPage from './menu.js';
 import contactPage from './contact.js';
 
 document.body.append(header());
@@ -39,7 +40,7 @@ function footer() {
     footer.append(a);
     //Add link to background image
     const a1 = document.createElement('a');
-    a1.href = 'https://www.freepik.com/vectors/food';
+    a1.href = 'https://www.freepik.com/vector/food';
     a1.textContent = 'Background image created by dgim-studio - www.freepik.com';
     footer.append(a1);
 
@@ -67,6 +68,28 @@ homeButton.addEventListener('click', () => {
     //create footer
     document.body.append(footer());
 });
+
+const menuButton = document.querySelector('.menu');
+
+menuButton.addEventListener('click', () => {
+    //remove everything inside div#content
+    const one = document.querySelector('.one');
+    one.remove();
+    const two = document.querySelector('.two');
+    two.remove();
+    const three = document.querySelector('.three');
+    three.remove();
+    const four = document.querySelector('.four');
+    four.remove();
+    //insert "home" content into div#content
+    document.body.append(menuPage());
+
+    //remove footer
+    const previousFooter = document.querySelector('footer');
+    previousFooter.remove();
+    //create footer
+    document.body.append(footer());
+})
 
 const contactButton = document.querySelector('.contact');
 
